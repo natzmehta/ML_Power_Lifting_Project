@@ -1,5 +1,7 @@
 # ML_Power_Lifting_Project
 
+![image](https://github.com/user-attachments/assets/af8cf95a-b23c-4785-b45c-5553bf6cb6ed)
+
 In recent years, the intersection of sports analytics and machine learning has opened new avenues for deriving insights and predictions from large datasets. The sport of powerlifting, with its rich history and diverse range of athletes, provides a unique opportunity to leverage machine learning techniques for predictive analytics.
 
 Powerlifting is a strength sport that consists of three attempts at maximal weight on three lifts: squat, bench press, and deadlift. Olympic weightlifting involves the athlete attempting a maximal weight single-lift effort of a barbell loaded with weight plates. Powerlifting evolved from a sport known as "odd lifts," which followed the same three-attempt format but used a wider variety of events, akin to strongman competition. Eventually, odd lifts became standardized to the current three.
