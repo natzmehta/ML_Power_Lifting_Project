@@ -11,6 +11,7 @@ The motivation or problem definition for this project, therefore, can be summari
 - Equipment Optimization: Analyze which types of equipment contribute most significantly to better performance.
 - Competition prediction and strategy: Help athletes devise strategies, such as selecting attempts or understanding their chances against competitors with similar or different profiles.
 
+
 **Data Loading & Cleaning:**
 
 The Powerlifting dataset contains details about competitions (meets) and participating athletes. The dataset was obtained from Kaggle in CSV format; the link for reference is https://www.kaggle.com/datasets/open-powerlifting/powerlifting-database/data. It consists of 1048576 records and 37 attributes. The dataset includes categorical features such as sex, event, equipment, age class, etc. and numerical features like age, body weight, weight class, weights lifted in each of the three attempts in each powerlifting event - squat, deadlift and bench press as well as the total or maximum weight an athlete could lift in kilograms. Further, the “place” column indicates the ranking or position of the athlete in the competition. Information about the competition, such as the event date, location, and the name of the meet, is also available.
@@ -28,6 +29,7 @@ However, the data contains 4246 unique divisions. Given the extensive range of u
 
 The visualization indicates a notable surge in the popularity of weightlifting as a sport over the years. However, a closer examination of the participant counts by year highlights incomplete data for 2019, prompting us to omit all records from that year. Notably, 2010 and 2014 stand out with significant increases in participant numbers, a trend we aim to scrutinize further in our exploratory data analysis section.
 
+
 **Data Processing**
 
 After identifying missing values in the dataset and dealing with duplicate records, we closely understand the data types for each column and decide on strategies to address the missing data. An integral column like ‘BodyweightKg’ had many missing values. Consequently, we impute the missing body weight with the participating weight class. While direct body weight measurements might be missing, weight class categorizations often closely correspond to specific weight ranges. Imputing missing values with the weight class retains some pertinent information regarding the participants' weights.
@@ -44,6 +46,7 @@ The function 'remove_outliers' calculates quartiles and the Interquartile Range 
 In the final leg of pre-processing the data, we perform one hot encoding to convert categorical data in the columns ‘Sex’, ‘Equipment’ and ‘Age Category’ into the numeric format. This is done so that the machine learning models, especially those based on mathematical equations, can process them effectively. One-hot encoding converts categorical variables into a binary format, creating new binary columns (often called dummy variables). Each unique category in the original column becomes a new column. For each observation, only one of these columns will be 1 (indicating the presence of that category), while others will be 0.
 
 Finally, we use MinMaxScaler from sklearn to scale specific columns ('BodyweightKg', 'Best3BenchKg', 'Best3DeadliftKg', 'TotalKg'). Scaling ensures these numerical features are within a consistent range (0 to 1), aiding in model convergence and reducing the impact of differing feature magnitudes on algorithms.
+
 
 **EDA**
 
@@ -68,6 +71,7 @@ We plot the distribution of athletes that secured first place overall by age (as
 In our final analysis, we assess absolute strength concerning body weight and equipment types to discern the effectiveness of specific equipment in powerlifting. By examining the relationship between equipment used and absolute strength, we aim to determine if using equipment provides a competitive advantage in lifts. This exploration aids in devising tailored training programs for athletes, leveraging insights from their historical preferences and performance to optimize future training strategies.
 
 ![image](https://github.com/user-attachments/assets/39bbe878-32a2-4194-a044-f571b61664ce)
+
 
 **Models and Performance Evaluation:**
 
@@ -117,6 +121,7 @@ Performance Metrics:
 • Mean Squared Error (MSE): 0.0034
 • Root Mean Squared Error (RMSE): 0.0583
 • R-squared (R2): 0.9184
+
 
 **Conclusion:**
 
