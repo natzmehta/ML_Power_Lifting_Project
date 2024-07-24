@@ -123,8 +123,12 @@ Performance Metrics:
 ![image](https://github.com/user-attachments/assets/061518c7-b7af-40a4-af90-487988fff99e)
 
 • Across all models, XG Boost Regressor consistently demonstrates lower error metrics (MAE, MSE, and RMSE)
+
 • XG Boost Regressor has the highest R-squared values indicating better predictive accuracy and goodness of fit
+
 • Different equipment types significantly influenced lift performance as well as maximum weight lifted by an athlete. Athletes that used single ply excelled while athletes that used wraps in their lifts tended to perform lower.
+
 • Athletes in their early career stages i.e. 20s or 30s tended to achieve higher rankings and better performance due to peak physical condition and training.
+
 • Features like body weight, equipment type and age showed notable importance in predicting TotalKg indicating strong influence on an athlete powerlifting performance
 
